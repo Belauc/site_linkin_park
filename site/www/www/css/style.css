@@ -1,0 +1,397 @@
+@charset "utf-8";
+*{
+	margin:0;
+	padding:0;
+	outline: none;
+}
+html 
+{ height:100%}
+
+
+
+.menu__drop li:last-child  {
+	border-bottom:0;
+
+	}
+	
+	
+
+
+body{
+	width:100%;
+	height:100%;
+	background-color:#0D0D0D;
+	color:#fafafa;
+	font-family: "Segoe UI", Arial, sans-serif;
+	font-size: 1em;
+	line-height:135%;
+	float:left;
+}
+
+body img{
+	width:100%;
+	height:100%;}
+
+img {
+	max-width:100%;
+	max-height:auto;
+	width:auto\9;
+}
+
+
+
+a{
+	color: #fafafa;
+	text-decoration: none;
+}
+a:hover {
+	color:#5B65C1;}
+
+a, a:hover{
+	-webkit-transition:all.4s ease;
+	-moz-transition:all.4s ease;
+	-ms-transition:all.4s ease;
+	-o-transition:all.4s ease;
+	transition:all.4s ease;
+}
+
+.clear{
+	clear:both;
+}
+	
+
+/* стили для шапки */
+
+header{
+	width:98%;
+	float:left;
+	padding:1%;
+	padding-bottom:0.6%;
+	padding-top:0.7%;
+	border-bottom: 2px solid  #fafafa;
+
+}
+	
+header #logo {
+	width:19%;
+	float:left;
+}
+	
+header #logo a img {
+	height:45px;
+	width:190px;
+	padding-left:25px;
+/*	-webkit-filter: blur(1px);
+	-moz-filter: blur(1px);
+	-ms-filter: blur(1px);
+	-o-filter: blur(1px);
+	filter: blur(1px);
+*/
+
+	}
+
+
+	
+	
+		
+	
+
+/* Стили для Menu */
+
+header #menuHead a {
+	text-decoration:none;
+	padding:10px;
+	display:block;
+	font-size:1.1em;
+}
+	
+ul {
+	margin:0;
+	padding:0;
+	list-style:none;}
+
+	
+.menu li {
+	float:left;
+	
+	margin-right:4em;}
+
+
+header #menuHead{
+	width:65%;
+	float:left;
+	margin-left:10%;}
+
+#menu__list {
+	position:relative;
+}
+
+
+
+.menu__drop {
+	position:absolute;
+	width:8em;
+	top:2.3em;
+	left:-9999em;
+	background-color:#0D0D0D;
+	text-align:center;
+	opacity:0;
+	border-top:18px solid transparent;
+
+}
+
+
+#menu__list:hover .menu__drop {
+	opacity:1;
+	left:-20px;
+	transition: 0.5s opacity;
+}
+
+.menu__drop li {
+	width:100%;
+	text-align:center;
+	float:left;
+	border-bottom: 0.2px solid #fafafa;
+}
+
+#menu__list::after {
+	content: "";
+	position:absolute;
+	border: 5px solid;
+	border-color: transparent transparent #fafafa transparent;
+	left:4.3em;
+	bottom:0.8em;
+	transition:0.5s;}
+	
+	
+	
+#menu__list:hover::after {
+	transform: scaleY(-0.9);
+}
+
+
+
+
+/* Стили для wrapper */
+
+#wrapper {
+	width:100%;
+	float:left;
+}
+
+
+
+/* Стили для BigArticle */
+
+#wrapper #BigArticle {
+	width:100%;
+	height:550px;
+	float:left;
+	background-image:url(../img/LP23.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-bottom: 2px solid #fafafa;
+}
+
+
+#wrapper #BigArticle #CenterArticles {
+	float:left;
+	margin:8%;
+	margin-bottom:0;
+	width:84%;
+
+	
+}
+
+#wrapper #BigArticle #CenterArticles p {
+	font-family: Verdana, sans-serif;
+	text-align: center;
+	text-shadow: 0 0 13px black;
+	text-overflow: ellipsis;
+	opacity:0;
+	
+}
+
+
+#wrapper #BigArticle #CenterArticles img {
+	width:17em;
+	height:auto;
+	float:left;
+	margin-right:10%;
+	box-shadow: 0px 0px 69px 0px #0D0D0D;
+	opacity:0;
+}
+
+#wrapper #BigArticle #CenterArticles #News
+{	float:left;
+	margin-top:3%;
+	width:60%;
+	
+}
+
+#wrapper #BigArticle #CenterArticles #News #go{
+	text-align:center;
+	float:left;
+	color:#fafafa;
+	font-family:Verdana , sans-serif;
+	font-size:0.9em;
+	margin-left:40%;
+	margin-top:6%;
+	padding-top:9px;
+	padding-bottom:9px;
+	padding-left:36px;
+	padding-right:36px;
+	background-color:#070c3a;
+	opacity:0;
+	box-shadow: inset 0px 0px  2px 1px #fafafa;}
+	
+	#wrapper #BigArticle #CenterArticles #News #go:hover
+	{ box-shadow: inset 0px 0px 4.7px 3.5px #D4D4D4;
+	-webkit-transition:all.4s ease;
+	-moz-transition:all.4s ease;
+	-ms-transition:all.4s ease;
+	-o-transition:all.4s ease;
+	transition:all.4s ease;
+	
+	}
+	
+	
+	
+	
+	
+/* Стили для Losing */
+
+#Losing {
+	float:left;
+	width:92%;
+	margin-left:60px;
+	height:2px;
+	background-color:#fafafa;
+	margin-top:90px;
+	border-radius:90px;
+	box-shadow: 0px 0px 7px 1px #fafafa;
+}
+
+
+
+
+/* Стили для Article */
+
+#wrapper #article {
+	float:left;
+	width:89%;
+	border-radius:2px;
+	margin-left:5%;
+	margin-right:5%;
+	margin-top:6%;
+	height:330px;
+	background-image:url(../img/minutes-to-midnight.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	box-shadow: 0px 0px 16px 1px #fafafa;
+}
+
+#wrapper #article img {
+	width:13.5em;
+	height:12em;
+	float:left;
+	margin-top:3.7%;
+	margin-left:10%;
+	margin-right:6%;
+	box-shadow: 0px 0px 36px 1px #0D0D0D;
+}
+
+#wrapper #article #ArticleNews {
+	color: #0D0D0D;
+	font-size: 1em;
+	font-family: Verdana, sans-serif;
+	text-align: center;
+	text-shadow: 0 0 6px 1px #0D0D0D ;
+	margin-top:8%;
+	margin-right:19%;
+
+}
+
+
+#wrapper #article #ArticleGo{
+	width:60px;
+	padding:6px;
+	padding-left:25px;
+	padding-right:25px;
+	margin-top:2%;
+	margin-left:57%;
+	float: left;
+	text-align:center;
+	background-color: #070C3A;
+	color:#fafafa;
+	font-family:Verdana , sans-serif;
+	font-size:0.9em;
+	box-shadow: inset 0px 0px  2px 1px #fafafa;
+	
+}
+
+
+#wrapper #article #ArticleGo:hover
+	{ box-shadow: inset 0px 0px 4.7px 3.5px #D4D4D4;
+	-webkit-transition:all.4s ease;
+	-moz-transition:all.4s ease;
+	-ms-transition:all.4s ease;
+	-o-transition:all.4s ease;
+	transition:all.4s ease;
+	
+	}
+
+/* Стили для Footer */
+
+
+footer {
+	width:98%;
+	float:left;
+	padding:1%;
+	background-color:#0D0D0D;
+	border-top:2px solid  #fafafa;
+	margin-top:5%;
+	}
+	
+footer #social{	
+	float:left;
+	width:50%;}
+	
+footer #social img {
+	width:25px;
+	height:25px;
+	float:left;
+	margin-right:7px;
+		
+}
+	
+	
+footer #rights{
+		float: right;
+		width:50%;
+		text-align:right;
+		font-size:0.9em;
+		color:#fafafa;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
